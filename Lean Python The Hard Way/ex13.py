@@ -11,7 +11,7 @@ from module import name
 from sys import argv		# argv 这个参数的值不能自己随便定义，会报错
 
 script,first,second,third = argv
-# script 可以改但是没变化 显示的都是脚本的名字
+# script 可以改但是没变化 显示的都是脚本的名字,因为赋值的是脚本的地址和名字
 
 print "The script is called:",script
 print "Your first variable is:",first
@@ -20,7 +20,7 @@ print "Your third variable is:",third
 
 """
 解包确切含义还学要清理！
-文档给的解释：它的含义很简单：“把 argv 中的东西解包，将所有的参数依次赋予左边的变量名
+文档给的解释：它的含义很简单：“把 argv 中的东西解包，将所有的参数依次赋予从左边开始的变量名
 1.给你的脚本三个以下的参数。看看会得到什么错误信息。试着解释一下
 ValueError: need more than 3 values to unpack 报错了 提示需要三个以上的值
 2.再写两个脚本，其中一个接受更少的参数，另一个接受更多的参数，在参数解包时给它们取一些有意义的变量名。

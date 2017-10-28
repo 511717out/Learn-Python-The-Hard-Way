@@ -21,7 +21,7 @@ def print_all(f):
 # 如果不设定的话第三个方法中的readline()无法正常工作
 def rewind(f):	
    # file.seek(offset[, whence])
-   #设置文件当前位置
+   #设置文件指针为当前位置
    f.seek(0)
 
 # 定义方法：逐行打印行号和该行内容

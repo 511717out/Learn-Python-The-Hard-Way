@@ -2,29 +2,29 @@
 
 """
 from-import语句作用
-python from import语句也是导入模块的一种方法，更确切的说是导入指定的模块内的指定函数方法。
+python的 from import语句也是导入模块的一种方法，更确切的说是导入指定的模块内的指定函数方法。
 from-import语句语法:
 from module import name
 关键字 模块名 关键字 方法名
 """
-# 从sys这个库中取出argv这个方法，下面会有解释
+# 从sys这个库中取出argv这个方法，
 from sys import argv
 # 将argv解包然后依次赋值给从左往右的变量
-script,filename = argv
+script, filename = argv
 # 打开赋值给变量txt的文件名，这里的文件名是ex15_sample.py
 txt = open(filename)
 # 打印输出语句，里面用了%r原样输出意思
 print "Here's you file %r:" % filename
 # 执行txt的read方法读取并输出
-print txt.close()
-# 带引输出语句
+print txt.read()
+# 输出语句
 print "Type the filename again:"
 # 获取用户输入的信息，并赋值给变量file_again
-file_again = raw_input(">")
+file_again = raw_input("> ")
 # open方法打开file_again文件并赋值给变量txt_again
 txt_again = open(file_again)
 # 执行txt的read方法读取并输出
-print txt_again.close()
+print txt_again.read()
 
 
 """

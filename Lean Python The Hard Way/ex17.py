@@ -3,7 +3,7 @@
 # 调用sys模块中的argv函数
 from sys import argv
 # 调用os.path模块中的exista函数
-# 这个命令将文件名字符串作为参数，如果文件存在的话，它将返回 True，否则将返回 False。
+# 这个命令将文件名,字符串作为参数，如果文件存在的话，它将返回 True，否则将返回 False。
 # os.path通用路径操作，
 # 官方文档:https://docs.python.org/2.7/library/os.path.html#os.path.splitunc
 from os.path import exists
@@ -62,7 +62,7 @@ input.close()
 6.找出为什么你需要在代码中写 output.close() 。
 	1.先这样理解。不对的以后学了再改
 	程序运行结束后 保存的文件并没有保存在磁盘中而是缓存在内存中 
-	使用close()关闭文件后 会把关闭此文件把内存中缓存的文件保存在内存中，
+	使用close()关闭文件后 会把关闭此文件把内存中缓存的文件保存在磁盘中，
 	close()方法关闭打开的文件。调用此方法后将无法读取或写入封闭文件。
 	、任何需要打开该文件的操作将在文件关闭后引发ValueError。允许多次调用close()。
 	当文件的引用对象重新分配给另一个文件时，Python会自动关闭一个文件。 
