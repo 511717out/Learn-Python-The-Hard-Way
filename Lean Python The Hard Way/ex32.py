@@ -21,9 +21,12 @@ for i in change:
 elements = []
 
 # then use the range function to do 0 to 5 counts
+# range 参考http://www.runoob.com/python/python-func-range.html
 for i in range(0,6):
    print "Adding %d to the list." % i
    # append is a function that lists understand
+   # append() 方法用于在列表末尾添加新的对象。
+   # list.append(obj)
    elements.append(i)
 
 # now we can print them out too
